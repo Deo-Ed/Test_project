@@ -38,6 +38,8 @@ scatter.smooth(x, y, main="Dist ~ Speed")
 #linear model
 Model1 <- lm(formula = y~x, data = cars)
 summary(Model1)
+boxplot(x,y)
+boxplot(cars$speed, cars$dist)
 ```
 
 ## Including Plots
