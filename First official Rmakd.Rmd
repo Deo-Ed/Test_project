@@ -1,0 +1,41 @@
+---
+title: "PracticeRmarkdown1"
+author: "Deodat"
+date: "1/5/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## **INTRODUCTION**
+
+This is my first official R Markdown document. In this exercise I will test the obvious relationship between speed and distance. First off, I will present the definition of each of the main concepts, namely speed and distance. Subsequently, the main hypothesis will be presented. 
+
+##**THEORY AND HYPOTHESIS**
+Speed can informally be defined as the rate at which an object moves. It is computed by dividing distance covered by the object by time used to cover that distance. Distance is the length of a stretch between two points.
+
+H1: As distance increases, drivers tend to drive faster
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+## **SUMMARY STATISTICS**
+
+```{r cars}
+summary(cars)
+cor(cars$speed,cars$dist)
+scatter.smooth(cars$speed,cars$dist)
+```
+
+## **REGRESSION ANALYSIS**
+```{r REGRESS speed ON distance}
+regmodel<-lm(cars$speed~cars$dist, data = cars)
+print(regmodel)
+summary(regmodel)
+```
+
+
+## **CONCLUSION**
+Yes, distance influences speed.
+
