@@ -40,6 +40,7 @@ Model1 <- lm(formula = y~x, data = cars)
 summary(Model1)
 boxplot(x,y)
 boxplot(cars$speed, cars$dist)
+##mmm
 ```
 
 ## Including Plots
