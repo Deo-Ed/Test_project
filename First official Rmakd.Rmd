@@ -14,7 +14,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ## **INTRODUCTION**
 
-This is my first official R Markdown document. In this exercise I will test the obvious relationship between speed and distance. First off, I will present the definition of each of the main concepts, namely speed and distance. Subsequently, the main hypothesis will be presented.The picture below illustrates speed. 
+This is my first official R Markdown document. In this exercise I will test the obvious relationship between speed and distance. First off, I will present the definition of each of the main concepts, namely speed and distance. Subsequently, the main hypothesis will be presented.The picture below illustrates conceptual model.  [And here is a link about speed](https://happygitwithr.com/rstudio-see-git.html)
 
 ![Figure 1](model.png)
 
